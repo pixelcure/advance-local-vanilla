@@ -6,11 +6,8 @@ ___
 
 ## **Details**:
 
-This project uses the `Pokémon` and `Star Wars` API. Upon landing upon the page, there are two calls to action, each fetches it's respective fantasy characters.
+This project uses the `Pokémon` and `Star Wars` API. Upon landing on the page, a new `FetchFunData` class is instantiated and each fetches their respective fantasy characters. Once fetched, the data is injected into the DOM within two `ul`'s living in a container called `div.data`
 
-Once the data has been fetched **successfully**, the button is set to  `disabled=true`.
-
-Click on your favorite first!
 
 > _In the case there there is an error in the request, `div#errorContainer` is injected with an error message and a sad `.gif`._
 
