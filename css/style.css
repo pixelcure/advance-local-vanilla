@@ -75,27 +75,6 @@ header {
   padding-bottom: 2rem;
 }
 
-button {
-  background: var(--red);
-  border: 0;
-  border-radius: var(--borderRadius);
-  color: var(--offWhite);
-  cursor: pointer;
-  height: 3rem;
-  line-height: 3rem;
-  padding: 0 1.5rem;
-}
-
-button:disabled,
-button:hover {
-  background: var(--brown);
-}
-
-button:disabled {
-  cursor: no-drop;
-  opacity: 0.75;
-}
-
 .list-base {
   list-style: none;
   margin: 0 0 3rem;
@@ -140,17 +119,6 @@ button:disabled {
 
 .contact span {
   color: var(--red);
-}
-
-/* Selection Box */
-.selection-box {
-  background: var(--offWhiteAccent);
-  padding: 2rem;
-}
-
-.selection-box .headline {
-  margin-top: 0;
-  text-align: center;
 }
 
 /* Data */
@@ -261,14 +229,20 @@ ul.star-wars .item {
 
 /* Error */
 .error-container {
-  border-top: 0.1rem solid var(--borderColor);
   color: var(--red);
   display: none;
   font-weight: bold;
-  margin-top: 1.5rem;
-  padding: 1.5rem 0 2rem;
+  margin: 1.5rem 0 2rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.error-container .error-block {
+  margin-bottom: 2rem;
+}
+
+.error-container .error-block:last-child {
+  margin-bottom: 0;
 }
 
 .error-container p {
@@ -309,26 +283,23 @@ ul.star-wars .item {
     margin-right: 3rem;
   }
 
-  .selection-box .headline {
-    text-align: left;
-  }
-
-  .selection-box button {
-    min-width: 15rem;
-  }
-
   .error-container .gif {
     max-width: 32rem;
   }
 
   .data {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   .data .column {
-    width: 46.66%;
+    width: 48%;
   }
+
+  .data .column {
+    margin-bottom: 0;
+  }
+
   .item .type {
     font-size: 1.4rem;
   }

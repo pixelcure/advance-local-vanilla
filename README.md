@@ -15,7 +15,7 @@ Click on your favorite first!
 > _In the case there there is an error in the request, `div#errorContainer` is injected with an error message and a sad `.gif`._
 
 ## **Supported Browsers:** _(latest version)_
-* Edge (latest)
-* Chrome (latest)
-* Safari
+* Chrome
+* Edge
 * Firefox
+* Safari
