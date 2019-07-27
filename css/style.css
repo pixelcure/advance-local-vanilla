@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --borderColor: rgba(0, 0, 0, .05);
+  --borderRadius: 0.5rem;
+  --brown: #ad363d;
+  --grey: #333;
+  --itemBgDefault: #ffdada;
+  --itemBgAccent: #fdc6ca;
+  --offWhite: #fffaf0;
+  --offWhiteAccent: #f9f5ec;
+  --red: #e20613;
+  --starwarsItemBg: #ece6e6;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: var(--offWhite);
+  color: var(--grey);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 2.3rem;
+}
+
+a:hover {
+  color: var(--brown);
+}
+
+strong {
+  font-weight: 600;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+h2 {
+  font-weight: normal;
+  line-height: 2.6rem;
+}
+
+ul {
+  font-size: 1.4rem;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0 0;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+/* Scaffolding */
+main {
+  padding: 3rem 1.5rem;
+}
+
+header {
+  border-bottom: 0.1rem solid var(--borderColor);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+
+button {
+  background: var(--red);
+  border: 0;
+  border-radius: var(--borderRadius);
+  color: var(--offWhite);
+  cursor: pointer;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+}
+
+button:disabled,
+button:hover {
+  background: var(--brown);
+}
+
+button:disabled {
+  cursor: no-drop;
+  opacity: 0.75;
+}
+
+.list-base {
+  list-style: none;
+  margin: 0 0 3rem;
+  padding: 0;
+}
+
+.list-base li {
+  margin-bottom: 2rem;
+}
+
+.list-base li:last-child {
+  margin-bottom: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+
+.menu li {
+  margin-bottom: 0;
+}
+
+/* Header */
+.logo {
+  color: var(--red);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  display: block;
+  text-align: right;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  text-align: right;
+}
+
+.contact span {
+  color: var(--red);
+}
+
+/* Selection Box */
+.selection-box {
+  background: var(--offWhiteAccent);
+  padding: 2rem;
+}
+
+.selection-box .headline {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Data */
+.data {
+  margin-top: 3rem;
+}
+
+.data .column:last-child {
+  margin-bottom: 0;
+}
+
+.data .data-headline {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+/* Details */
+.item {
+  background: var(--itemBgDefault);
+  border-radius: var(--borderRadius);
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, .25);
+  padding: 1.5rem;
+}
+
+ul.star-wars .item {
+  background: var(--starwarsItemBg);
+}
+
+.item .type {
+  color: var(--red);
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.25;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.item .type.star-wars {
+  color: var(--grey);
+}
+
+.image {
+  left: 0;
+  max-width: 5rem;
+  position: absolute;
+}
+
+.details-top {
+  display: flex;
+  flex-flow: column;
+}
+
+.details-top.image-padded {
+  padding-left: 6rem;
+  position: relative;
+}
+
+.details-bottom {
+  margin-top: 2rem;
+}
+
+.details-bottom ul {
+  padding-left: 2rem;
+}
+
+.details-bottom li {
+  margin-bottom: 1rem;
+}
+
+.level {
+  background: var(--itemBgAccent);
+  border-radius: var(--borderRadius);
+  color: var(--red);
+  margin: 1rem 0 0;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.level strong {
+  font-weight: 100;
+}
+
+.level em {
+  color: var(--brown);
+  font-weight: 600;
+}
+
+.title {
+  color: var(--brown);
+  font-size: 2.1rem;
+  line-height: 2.6rem;
+  margin: 0;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, .25);
+  text-transform: uppercase;
+}
+
+.label {
+  border-bottom: 1px solid var(--itemBgAccent);
+  color: var(--red);
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Error */
+.error-container {
+  border-top: 0.1rem solid var(--borderColor);
+  color: var(--red);
+  display: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.error-container p {
+  margin: 0;
+}
+
+.error-container.visible {
+  display: block;
+}
+
+.error-container .error-response p {
+  color: var(--brown);
+}
+
+.error-container .gif {
+  display: flex;
+  margin: 1.5rem auto 0;
+  width: 22rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  .contact {
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+  }
+
+  .menu {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .menu li {
+    margin-right: 3rem;
+  }
+
+  .selection-box .headline {
+    text-align: left;
+  }
+
+  .selection-box button {
+    min-width: 15rem;
+  }
+
+  .error-container .gif {
+    max-width: 32rem;
+  }
+
+  .data {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .data .column {
+    width: 46.66%;
+  }
+  .item .type {
+    font-size: 1.4rem;
+  }
+
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .label {
+    font-size: 2rem;
+  }
+
+  .level,
+  .details-bottom li {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin: 0 auto;
+    width: 96rem;
+  }
+
+  .error-container {
+    margin-top: 5rem;
+  }
+}

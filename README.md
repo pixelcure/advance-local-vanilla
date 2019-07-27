@@ -1,19 +1,21 @@
-# Vanilla Example
+# Advance Local Code Assignment
 
-This directory is a brief example of a vanilla site that can be deployed to ZEIT Now with zero configuration.
+## In order to run this project, simply clone the repository and double click the `index.html` file to open it in the browser.
 
-## How we created this example
+___
 
-To get started with a vanilla site on Now, you can use the [Now CLI](https://zeit.co/download) to initialize the project:
+## **Details**:
 
-```shell
-$ now init vanilla
-```
+This project uses the `Pokémon` and `Star Wars` API. Upon landing upon the page, there are two calls to action, each fetches it's respective fantasy characters.
 
-## Deploying this Example
+Once the data has been fetched **successfully**, the button is set to  `disabled=true`.
 
-Once initialized, you can deploy the Vanilla example with just a single command:
+Click on your favorite first!
 
-```shell
-$ now
-```
+> _In the case there there is an error in the request, `div#errorContainer` is injected with an error message and a sad `.gif`._
+
+## **Supported Browsers:** _(latest version)_
+* Edge (latest)
+* Chrome (latest)
+* Safari
+* Firefox
