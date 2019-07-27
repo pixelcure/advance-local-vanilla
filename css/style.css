@@ -89,16 +89,6 @@ header {
   margin-bottom: 0;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 0;
-}
-
-.menu li {
-  margin-bottom: 0;
-}
-
 /* Header */
 .logo {
   color: var(--red);
@@ -237,20 +227,20 @@ ul.star-wars .item {
   text-transform: uppercase;
 }
 
-.error-container .error-block {
-  margin-bottom: 2rem;
-}
-
-.error-container .error-block:last-child {
-  margin-bottom: 0;
-}
-
 .error-container p {
   margin: 0;
 }
 
 .error-container.visible {
   display: block;
+}
+
+.error-container .error-block {
+  margin-bottom: 2rem;
+}
+
+.error-container .error-block:last-child {
+  margin-bottom: 0;
 }
 
 .error-container .error-response p {
@@ -272,15 +262,6 @@ ul.star-wars .item {
   .contact {
     font-size: 1.4rem;
     padding-top: 0.5rem;
-  }
-
-  .menu {
-    justify-content: flex-start;
-    margin-bottom: 0;
-  }
-
-  .menu li {
-    margin-right: 3rem;
   }
 
   .error-container .gif {
