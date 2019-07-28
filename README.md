@@ -2,6 +2,9 @@
 
 ## In order to run this project, simply clone the repository and double click the `index.html` file to open it in the browser.
 
+View in browser:<br/>
+[http://www.paulthibedeau.com/advance-local/vanilla](http://www.paulthibedeau.com/advance-local/vanilla)
+
 ___
 
 ## **Details**:
