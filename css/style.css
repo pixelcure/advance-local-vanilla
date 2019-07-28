@@ -143,6 +143,7 @@ ul.star-wars .item {
   font-size: 1.2rem;
   font-weight: 600;
   opacity: 0.25;
+  letter-spacing: 0.1rem;
   padding-bottom: 1.5rem;
   text-transform: uppercase;
 }
