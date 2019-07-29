@@ -44,11 +44,11 @@ class FetchFunData {
             <li class="item">
                 <span class="type">Pokémon</span>
                 <div class="details-top image-padded">
-                    <div class="image"><img src=${sprites.front_shiny} alt=${name + ' image'} /></div>
+                    ${sprites && sprites.front_shiny && `<div class="image"><img src=${sprites.front_shiny} alt=${name + ' image'} /></div>`}
                     <h3 class="title">${capitalizeFirstLetter(name)}</h3>
                     <div class="level">
                         <strong>Base Experience:</strong>
-                        <em>${base_experience}</em>
+                        <em>${base_experience || 'n/a'}</em>
                     </div>
                 </div>
                 <div class="details-bottom">
@@ -88,10 +88,10 @@ class FetchFunData {
                 <div class="details-bottom">
                     <strong class="label">Stats:</strong>
                     <ul class="capitalize">
-                        <li><strong>Gender:</strong> ${gender}</li>
-                        <li><strong>Birth Year:</strong> ${birth_year}</li>
-                        <li><strong>Skin Color:</strong> ${skin_color}</li>
-                        <li><strong>Hair Color:</strong> ${hair_color}</li>
+                        <li><strong>Gender:</strong> ${gender || 'n/a'}</li>
+                        <li><strong>Birth Year:</strong> ${birth_year || 'n/a'}</li>
+                        <li><strong>Skin Color:</strong> ${skin_color || 'n/a/'}</li>
+                        <li><strong>Hair Color:</strong> ${hair_color || 'n/a'}</li>
                     </ul>
                 </div>
             </li>
